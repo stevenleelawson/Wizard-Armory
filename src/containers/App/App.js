@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import * as api from '../../apiCalls';
 import * as actions from '../../actions';
+import { connect } from 'react-redux';
 import './App.css';
 
 class App extends Component {
   componentDidMount() {
-    api.getCards('green')
+    this.fetchCards();
+  }
+
+  fetchCards = async () => {
+    const cards = await api.getCards('green');
+    this.props.loadCards(cards);
   }
 
   render() {
@@ -20,4 +26,9 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapDispatchToProps = dispatch => ({
+  loadCards: cards => dispatch(actions.loadCards(cards))
+});
+
+
+export default connect(null, mapDispatchToProps)(App);
