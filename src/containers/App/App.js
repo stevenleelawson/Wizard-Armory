@@ -4,7 +4,7 @@ import * as actions from '../../actions';
 import { connect } from 'react-redux';
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   componentDidMount() {
     this.fetchCards();
   }
