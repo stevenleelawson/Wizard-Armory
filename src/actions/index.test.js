@@ -7,7 +7,7 @@ describe('Actions', () => {
     const cards = mockData.mockCardData;
     const expected = {
       type: 'LOAD_CARDS',
-      ...cards
+      cards
     }
     expect(actions.loadCards(cards)).toEqual(expected)
   });
