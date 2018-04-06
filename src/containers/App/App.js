@@ -4,13 +4,14 @@ import * as actions from '../../actions';
 import { connect } from 'react-redux';
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   componentDidMount() {
     this.fetchCards();
   }
 
   fetchCards = async () => {
     const cards = await api.getCards('green');
+    console.log(this.props)
     this.props.loadCards(cards);
   }
 
