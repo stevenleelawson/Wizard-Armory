@@ -3,6 +3,7 @@ import * as api from '../../apiCalls';
 import * as actions from '../../actions';
 import { connect } from 'react-redux';
 import './App.css';
+import CardContainer from '../CardContainer';
 
 export class App extends Component {
   componentDidMount() {
@@ -20,7 +21,7 @@ export class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Wizard Tracker</h1>
         </header>
-
+        <CardContainer />
       </div>
     );
   }
