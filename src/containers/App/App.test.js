@@ -13,7 +13,12 @@ describe('App', () => {
   });
 
   it('should match the snapshot', () => {
-    const wrapper = shallow(<App loadCards={mockLoadCards}/>)
+    const wrapper = shallow(
+      <App
+        loadCards={mockLoadCards}
+      />,
+      { disableLifecycleMethods: true }
+    )
     expect(wrapper).toMatchSnapshot();
   });
 });

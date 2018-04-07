@@ -29,7 +29,10 @@ ShallowWrapper {
                     Wizard Tracker
           </h1>
 </header>,
-        <Connect(Component) />,
+        <Route
+          path="/"
+          render={[Function]}
+/>,
       ],
       "className": "App",
     },
@@ -66,7 +69,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "path": "/",
+          "render": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -90,7 +96,10 @@ ShallowWrapper {
                         Wizard Tracker
             </h1>
 </header>,
-          <Connect(Component) />,
+          <Route
+            path="/"
+            render={[Function]}
+/>,
         ],
         "className": "App",
       },
@@ -127,7 +136,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "path": "/",
+            "render": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -142,6 +154,7 @@ ShallowWrapper {
         "enableComponentDidUpdateOnSetState": true,
       },
     },
+    "disableLifecycleMethods": true,
   },
 }
 `;
