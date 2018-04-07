@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
 class Form extends Component {
   constructor() {
@@ -8,12 +10,15 @@ class Form extends Component {
       color: ''
     }
   }
+
   handleChange = (event) => {
     event.preventDefault();
     const { value } = event.target;
     this.setState({ color: value })
     console.log('form',event.target.value)
+    this.props.formState(this.state.color)
   }
+
   render() {
     return (
       <div>
@@ -30,4 +35,10 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export const mapDispatchToProps = dispatch => ({
+  formState: color => dispatch(actions.formState(color))
+});
+
+export default connect(null, mapDispatchToProps)(Form);
+
+// export default Form;

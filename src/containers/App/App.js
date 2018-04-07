@@ -10,10 +10,12 @@ import Form from '../../components/Form';
 export class App extends Component {
   componentDidMount() {
     this.fetchCards();
+    this.props.formState(this.props.color)
+    console.log('propscolor',this.props)
   }
 
   fetchCards = async () => {
-    const cards = await api.getCards('red');
+    const cards = await api.getCards(this.props.color);
     this.props.loadCards(cards);
   }
 
@@ -30,9 +32,14 @@ export class App extends Component {
   }
 }
 
+export const mapStateToProps = state => ({
+  color: state.color
+})
+
 export const mapDispatchToProps = dispatch => ({
-  loadCards: cards => dispatch(actions.loadCards(cards))
+  loadCards: cards => dispatch(actions.loadCards(cards)),
+  formState: color => dispatch(actions.formState(color))
 });
 
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
