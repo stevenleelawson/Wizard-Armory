@@ -3,7 +3,7 @@ export const loadCards = (cards) => ({
   cards
 });
 
-export const formState = color => ({
+export const formState = (color) => ({
   type: 'FORM_STATE',
   color
-})
+});
