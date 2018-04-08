@@ -18,7 +18,8 @@ describe('App', () => {
         loadCards={mockLoadCards}
       />,
       { disableLifecycleMethods: true }
-    )
+    );
+    
     expect(wrapper).toMatchSnapshot();
   });
 });

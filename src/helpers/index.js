@@ -3,5 +3,5 @@ export const cardsCleaner = (cardsArray) => {
     name: card.name,
     imageUrl: card.imageUrl,
     id: card.id
-  }))
-}
+  }));
+};
