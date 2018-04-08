@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import CardContainer from '../CardContainer';
 import Form from '../../components/Form';
+import PropTypes from 'prop-types';
 
 export class App extends Component {
   componentDidUpdate(prevProps, nextProps) {
@@ -13,7 +14,6 @@ export class App extends Component {
       this.fetchCards();
 
     }
-    console.log('propscolor',this.props)
   }
 
   fetchCards = async () => {
@@ -36,7 +36,7 @@ export class App extends Component {
 
 export const mapStateToProps = state => ({
   color: state.color
-})
+});
 
 export const mapDispatchToProps = dispatch => ({
   loadCards: cards => dispatch(actions.loadCards(cards)),
@@ -45,3 +45,8 @@ export const mapDispatchToProps = dispatch => ({
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+App.propTypes = {
+  color: PropTypes.string,
+  loadCards: PropTypes.func
+};

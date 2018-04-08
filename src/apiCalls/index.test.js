@@ -15,15 +15,16 @@ describe('getCards', () => {
   });
 
   it('should call fetch with right params', () => {
-      const root = 'https://api.magicthegathering.io/v1/cards';
-      const expected = `${root}/?colors=${color}`;
+    const root = 'https://api.magicthegathering.io/v1/cards';
+    const expected = `${root}/?colors=${color}`;
 
-      api.getCards(color)
-      expect(window.fetch).toHaveBeenCalledWith(expected)
-    });
+    api.getCards(color);
+    expect(window.fetch).toHaveBeenCalledWith(expected);
+  });
+
   it('should call cleanCards with the right params', () => {
-      api.cardsCleaner = jest.fn();
-      api.getCards(color);
-      expect(cardsCleaner).toHaveBeenCalledWith(mockData.mockCardData)
+    api.cardsCleaner = jest.fn();
+    api.getCards(color);
+    expect(cardsCleaner).toHaveBeenCalledWith(mockData.mockCardData);
   });
 });

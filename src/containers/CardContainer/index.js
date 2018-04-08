@@ -8,13 +8,17 @@ export const CardContainer = ({cards}) => {
     return <Card
       imageUrl = {card.imageUrl}
       key = {card.id}
-    />
-  })
+    />;
+  });
   return (
     <div>{displayCards}</div>
-  )
-}
+  );
+};
 
 export const mapStateToProps = ({cards}) => ({cards});
 
-export default connect(mapStateToProps)(CardContainer)
+export default connect(mapStateToProps)(CardContainer);
+
+CardContainer.propTypes = {
+  cards: PropTypes.array
+};

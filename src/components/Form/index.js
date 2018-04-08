@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+import PropTypes from 'prop-types';
 
-class Form extends Component {
+export class Form extends Component {
   constructor() {
     super();
 
     this.state = {
       color: ''
-    }
+    };
   }
+
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.formState(this.state.color)
+    this.props.formState(this.state.color);
 
   }
 
   handleChange = (event) => {
     const { value } = event.target;
-    this.setState({ color: value })
+    this.setState({ color: value });
   }
 
   render() {
@@ -34,7 +36,7 @@ class Form extends Component {
         </select>
         <button type='submit'>Submit</button>
       </form>
-    )
+    );
   }
 }
 
@@ -44,4 +46,6 @@ export const mapDispatchToProps = dispatch => ({
 
 export default connect(null, mapDispatchToProps)(Form);
 
-// export default Form;
+Form.propTypes = {
+  formState: PropTypes.func
+};

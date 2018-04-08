@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const mockCardData = [{
   name: "As Luck Would Have It",
   manaCost: "{G}",

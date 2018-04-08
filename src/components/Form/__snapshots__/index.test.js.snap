@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Form
+    formState={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <select
+          onChange={[Function]}
+          value=""
+>
+          <option>
+                    Select a Color of Magic
+          </option>
+          <option>
+                    White
+          </option>
+          <option>
+                    Blue
+          </option>
+          <option>
+                    Green
+          </option>
+          <option>
+                    Red
+          </option>
+          <option>
+                    Black
+          </option>
+</select>,
+        <button
+          type="submit"
+>
+          Submit
+</button>,
+      ],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option>
+              Select a Color of Magic
+</option>,
+            <option>
+              White
+</option>,
+            <option>
+              Blue
+</option>,
+            <option>
+              Green
+</option>,
+            <option>
+              Red
+</option>,
+            <option>
+              Black
+</option>,
+          ],
+          "onChange": [Function],
+          "value": "",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Select a Color of Magic",
+            },
+            "ref": null,
+            "rendered": "Select a Color of Magic",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "White",
+            },
+            "ref": null,
+            "rendered": "White",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Blue",
+            },
+            "ref": null,
+            "rendered": "Blue",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Green",
+            },
+            "ref": null,
+            "rendered": "Green",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Red",
+            },
+            "ref": null,
+            "rendered": "Red",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Black",
+            },
+            "ref": null,
+            "rendered": "Black",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Submit",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Submit",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <select
+            onChange={[Function]}
+            value=""
+>
+            <option>
+                        Select a Color of Magic
+            </option>
+            <option>
+                        White
+            </option>
+            <option>
+                        Blue
+            </option>
+            <option>
+                        Green
+            </option>
+            <option>
+                        Red
+            </option>
+            <option>
+                        Black
+            </option>
+</select>,
+          <button
+            type="submit"
+>
+            Submit
+</button>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option>
+                Select a Color of Magic
+</option>,
+              <option>
+                White
+</option>,
+              <option>
+                Blue
+</option>,
+              <option>
+                Green
+</option>,
+              <option>
+                Red
+</option>,
+              <option>
+                Black
+</option>,
+            ],
+            "onChange": [Function],
+            "value": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Select a Color of Magic",
+              },
+              "ref": null,
+              "rendered": "Select a Color of Magic",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "White",
+              },
+              "ref": null,
+              "rendered": "White",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Blue",
+              },
+              "ref": null,
+              "rendered": "Blue",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Green",
+              },
+              "ref": null,
+              "rendered": "Green",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Red",
+              },
+              "ref": null,
+              "rendered": "Red",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Black",
+              },
+              "ref": null,
+              "rendered": "Black",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Submit",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Submit",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
