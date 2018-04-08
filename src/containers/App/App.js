@@ -8,9 +8,11 @@ import CardContainer from '../CardContainer';
 import Form from '../../components/Form';
 
 export class App extends Component {
-  componentDidMount() {
-    this.fetchCards();
-    this.props.formState(this.props.color)
+  componentDidUpdate(prevProps, nextProps) {
+    if (prevProps !== nextProps) {
+      this.fetchCards();
+
+    }
     console.log('propscolor',this.props)
   }
 

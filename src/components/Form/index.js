@@ -10,20 +10,20 @@ class Form extends Component {
       color: ''
     }
   }
-  componentDidMount() {
-    console.log('colorstate', this.state.color)
-  }
-  handleChange = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
-    const { value } = event.target;
-    this.setState({ color: value })
     this.props.formState(this.state.color)
 
   }
 
+  handleChange = (event) => {
+    const { value } = event.target;
+    this.setState({ color: value })
+  }
+
   render() {
     return (
-      <div>
+      <form onSubmit={this.handleSubmit}>
         <select onChange={this.handleChange}  value={this.state.color}>
           <option>Select a Color of Magic</option>
           <option>White</option>
@@ -32,7 +32,8 @@ class Form extends Component {
           <option>Red</option>
           <option>Black</option>
         </select>
-      </div>
+        <button type='submit'>Submit</button>
+      </form>
     )
   }
 }
