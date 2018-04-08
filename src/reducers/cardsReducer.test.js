@@ -11,8 +11,3 @@ describe('cardsReducer', () => {
     expect(cardsReducer(undefined, actions.loadCards(mockCardData))).toEqual(mockCardData);
   });
 });
-
-// it('should add an array of movies to the state', () => {
-//     expect(moviesReducer(undefined, actions.loadCards(mockMovies)))
-//       .toEqual(mockMovies);
-//   });

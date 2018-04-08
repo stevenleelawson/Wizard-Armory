@@ -11,4 +11,13 @@ describe('Actions', () => {
     }
     expect(actions.loadCards(cards)).toEqual(expected)
   });
+
+  it('should return an action type of formState', () => {
+    const color= 'green';
+    const expected = {
+      type: 'FORM_STATE',
+      color
+    }
+    expect(actions.formState(color)).toEqual(expected);
+  });
 });
