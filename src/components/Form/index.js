@@ -10,13 +10,15 @@ class Form extends Component {
       color: ''
     }
   }
-
+  componentDidMount() {
+    console.log('colorstate', this.state.color)
+  }
   handleChange = (event) => {
     event.preventDefault();
     const { value } = event.target;
     this.setState({ color: value })
-    console.log('form',event.target.value)
     this.props.formState(this.state.color)
+
   }
 
   render() {
