@@ -2,11 +2,13 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Form } from './index';
 
+
 describe('Form', () => {
   let wrapper;
-  const mockFormState = jest.fn();
+  let mockFormState;
 
   beforeEach(() => {
+    mockFormState = jest.fn();
     wrapper = shallow(<Form formState={mockFormState}/>);
   });
 
@@ -31,16 +33,20 @@ describe('Form', () => {
     expect(wrapper.state('color')).toEqual('Green');
   });
 
-  it.skip('should call formState on submit', () => {
+  it('should call formState on submit', () => {
+    //setup
     const mockEvent = {
       preventDefault: jest.fn()
     };
 
-    const expected = {
-      color: 'green'
-    };
+    const expected = 'green';
 
+    wrapper.instance().handleChange({target: {value: 'green'}})
+    //execution
     wrapper.instance().handleSubmit(mockEvent);
+
+    //assertion
+    expect(mockFormState).toHaveBeenCalledWith(expected);
 
   });
 });

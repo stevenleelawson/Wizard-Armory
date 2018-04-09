@@ -8,8 +8,10 @@ describe('addToDeckReducer', () => {
   });
 
   it('should add a card to the deck array', () => {
-    console.log(actions.addToDeck(mockCleanCard))
-    expect(undefined, addToDeckReducer(actions.addToDeck(mockCleanCard)))
-    .toEqual([mockCleanCard]);
+    const addToDeckAction = actions.addToDeck(mockCleanCard);
+    const actual = addToDeckReducer(undefined, addToDeckAction);
+    const expected = [mockCleanCard];
+
+    expect(actual).toEqual(expected);
   });
 });

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 
@@ -44,7 +45,7 @@ export const mapDispatchToProps = dispatch => ({
   formState: color => dispatch(actions.formState(color))
 });
 
-export default connect(null, mapDispatchToProps)(Form);
+export default withRouter(connect(null, mapDispatchToProps)(Form));
 
 Form.propTypes = {
   formState: PropTypes.func
