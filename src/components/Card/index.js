@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({imageUrl, id}) => {
+const Card = ({imageUrl, id, info, addToDeck}) => {
+  console.log('addToDeck', addToDeck)
+  const handleDeckBtnClick = () => {
+    addToDeck(info)
+  }
+
   return (
-    <div>
+    <div onClick={(event) => handleDeckBtnClick()}>
       <img src={imageUrl} key={id} alt='magic card'/>
     </div>
   );

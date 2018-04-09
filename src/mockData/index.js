@@ -22,4 +22,4 @@ export const mockCleanCard = {
   name: "As Luck Would Have It",
   imageUrl: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
   id: "8d2722825dfa475154e0c87ba72c47528c4cf485"
-}
+};

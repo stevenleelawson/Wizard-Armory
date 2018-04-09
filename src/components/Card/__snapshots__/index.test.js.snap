@@ -21,6 +21,7 @@ ShallowWrapper {
         alt="magic card"
         src={undefined}
 />,
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Object {
@@ -47,6 +48,7 @@ ShallowWrapper {
           alt="magic card"
           src={undefined}
 />,
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Object {
