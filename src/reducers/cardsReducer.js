@@ -1,7 +1,8 @@
-const cardsReducer = (state = [], action) => {
+const cardsReducer = (state = {}, action) => {
+  console.log('reducer',action.color)
   switch (action.type) {
   case 'LOAD_CARDS':
-    return action.cards;
+    return {...state, [action.color]: action.cards}
   default:
     return state;
   }

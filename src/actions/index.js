@@ -1,6 +1,7 @@
-export const loadCards = (cards) => ({
+export const loadCards = (cards, color) => ({
   type: 'LOAD_CARDS',
-  cards
+  cards,
+  color
 });
 
 export const formState = (color) => ({

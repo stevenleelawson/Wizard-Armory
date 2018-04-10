@@ -15,19 +15,21 @@ export class Form extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.formState(this.state.color);
+    // this.props.formState(this.state.color);
 
   }
 
   handleChange = (event) => {
     const { value } = event.target;
-    this.setState({ color: value });
+    ///this.setState({ color: value });
+    
+    this.props.formState(value);
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <select onChange={this.handleChange}  value={this.state.color}>
+
+        <select onChange={this.handleChange}>
           <option>Select a Color of Magic</option>
           <option>White</option>
           <option>Blue</option>
@@ -35,8 +37,7 @@ export class Form extends Component {
           <option>Red</option>
           <option>Black</option>
         </select>
-        <button type='submit'>Submit</button>
-      </form>
+
     );
   }
 }

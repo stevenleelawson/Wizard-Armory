@@ -18,8 +18,16 @@ export class App extends Component {
   }
 
   fetchCards = async () => {
-    const cards = await api.getCards(this.props.color);
-    this.props.loadCards(cards);
+    const color= this.props.color;
+    if (this.props.cards[color]) {
+      //do somethig
+    } else {
+      console.log('color',color)
+      const cards = await api.getCards(this.props.color);
+      this.props.loadCards(cards, color);
+      console.log('wtf',this.props.cards)
+    }
+
   }
 
   render() {
@@ -27,23 +35,24 @@ export class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Wizard Armory</h1>
-          <Route path='/' render={() => <Form />} />
+          <Route path='/' component={Form} />
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/deck'>MyDeck</NavLink>
         </header>
-        <Route exact path='/' render={() => <CardContainer />} />
-        <Route exact path='/deck' render={() => <DeckContainer />} />
+        <Route exact path='/' component={CardContainer} />
+        <Route exact path='/deck' component={DeckContainer} />
       </div>
     );
   }
 }
 
 export const mapStateToProps = state => ({
-  color: state.color
+  color: state.color,
+  cards: state.cards
 });
 
 export const mapDispatchToProps = dispatch => ({
-  loadCards: cards => dispatch(actions.loadCards(cards)),
+  loadCards: (cards, color) => dispatch(actions.loadCards(cards, color)),
   formState: color => dispatch(actions.formState(color))
 });
 
