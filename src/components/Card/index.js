@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 
 const Card = ({imageUrl, id, info, addToDeck}) => {
   console.log('addToDeck', addToDeck)
@@ -8,7 +9,7 @@ const Card = ({imageUrl, id, info, addToDeck}) => {
   }
 
   return (
-    <div onClick={(event) => handleDeckBtnClick()}>
+    <div className='card' onClick={(event) => handleDeckBtnClick()}>
       <img src={imageUrl} key={id} alt='magic card'/>
     </div>
   );

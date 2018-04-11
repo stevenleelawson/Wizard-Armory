@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 .App {
   text-align: center;
 }
@@ -8,14 +10,19 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-image: url('./battlinwizard.jpg');
+  background-size: cover;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: #4C1502;
+  font-family: 'Lora', serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3em;
+  margin-top: 0
 }
 
 .App-intro {

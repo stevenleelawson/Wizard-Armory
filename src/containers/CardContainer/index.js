@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Card from '../../components/Card';
 import * as actions from '../../actions';
+import './styles.css';
 
 export const CardContainer = ({cards, addToDeck, color}) => {
   let displayCards;
@@ -33,7 +34,7 @@ export const CardContainer = ({cards, addToDeck, color}) => {
 // );
   return (
     // <div>{smallArray}</div>
-    <div>{displayCards}</div>
+    <div className='card-container'>{displayCards}</div>
 
   );
 };

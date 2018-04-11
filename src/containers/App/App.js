@@ -31,7 +31,7 @@ export class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Wizard Armory</h1>
+          <h1 className="App-title">WIZARD ARMORY</h1>
           <Route path='/' component={Form} />
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/deck'>MyDeck</NavLink>
