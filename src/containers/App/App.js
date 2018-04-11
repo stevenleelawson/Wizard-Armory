@@ -19,13 +19,10 @@ export class App extends Component {
 
   fetchCards = async () => {
     const color= this.props.color;
-    if (this.props.cards[color]) {
-      //do somethig
-    } else {
-      console.log('color',color)
+    // const colorCards = this.props.cards[color];
+    if (!this.props.cards[color]) {
       const cards = await api.getCards(this.props.color);
-      this.props.loadCards(cards, color);
-      console.log('wtf',this.props.cards)
+      this.props.loadCards(cards, color)
     }
 
   }

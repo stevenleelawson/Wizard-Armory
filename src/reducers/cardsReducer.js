@@ -1,5 +1,4 @@
 const cardsReducer = (state = {}, action) => {
-  console.log('reducer',action.color)
   switch (action.type) {
   case 'LOAD_CARDS':
     return {...state, [action.color]: action.cards}
