@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
+import './styles.css';
 
 export class Form extends Component {
   constructor() {
@@ -22,14 +23,14 @@ export class Form extends Component {
   handleChange = (event) => {
     const { value } = event.target;
     ///this.setState({ color: value });
-    
+
     this.props.formState(value);
   }
 
   render() {
     return (
 
-        <select onChange={this.handleChange}>
+        <select className='select' onChange={this.handleChange}>
           <option>Select a Color of Magic</option>
           <option>White</option>
           <option>Blue</option>
