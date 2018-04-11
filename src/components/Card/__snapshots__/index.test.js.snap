@@ -21,6 +21,7 @@ ShallowWrapper {
         alt="magic card"
         src={undefined}
 />,
+      "className": "card",
       "onClick": [Function],
     },
     "ref": null,
@@ -48,6 +49,7 @@ ShallowWrapper {
           alt="magic card"
           src={undefined}
 />,
+        "className": "card",
         "onClick": [Function],
       },
       "ref": null,

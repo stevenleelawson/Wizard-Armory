@@ -26,11 +26,11 @@ ShallowWrapper {
           <h1
                     className="App-title"
           >
-                    Wizard Armory
+                    WIZARD ARMORY
           </h1>
           <Route
+                    component={[Function]}
                     path="/"
-                    render={[Function]}
           />
           <NavLink
                     activeClassName="active"
@@ -48,14 +48,14 @@ ShallowWrapper {
           </NavLink>
 </header>,
         <Route
+          component={[Function]}
           exact={true}
           path="/"
-          render={[Function]}
 />,
         <Route
+          component={[Function]}
           exact={true}
           path="/deck"
-          render={[Function]}
 />,
       ],
       "className": "App",
@@ -71,11 +71,11 @@ ShallowWrapper {
             <h1
               className="App-title"
 >
-              Wizard Armory
+              WIZARD ARMORY
 </h1>,
             <Route
+              component={[Function]}
               path="/"
-              render={[Function]}
 />,
             <NavLink
               activeClassName="active"
@@ -101,11 +101,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Wizard Armory",
+              "children": "WIZARD ARMORY",
               "className": "App-title",
             },
             "ref": null,
-            "rendered": "Wizard Armory",
+            "rendered": "WIZARD ARMORY",
             "type": "h1",
           },
           Object {
@@ -113,8 +113,8 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "component": [Function],
               "path": "/",
-              "render": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -156,9 +156,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "exact": true,
           "path": "/",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -169,9 +169,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "exact": true,
           "path": "/deck",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -193,11 +193,11 @@ ShallowWrapper {
             <h1
                         className="App-title"
             >
-                        Wizard Armory
+                        WIZARD ARMORY
             </h1>
             <Route
+                        component={[Function]}
                         path="/"
-                        render={[Function]}
             />
             <NavLink
                         activeClassName="active"
@@ -215,14 +215,14 @@ ShallowWrapper {
             </NavLink>
 </header>,
           <Route
+            component={[Function]}
             exact={true}
             path="/"
-            render={[Function]}
 />,
           <Route
+            component={[Function]}
             exact={true}
             path="/deck"
-            render={[Function]}
 />,
         ],
         "className": "App",
@@ -238,11 +238,11 @@ ShallowWrapper {
               <h1
                 className="App-title"
 >
-                Wizard Armory
+                WIZARD ARMORY
 </h1>,
               <Route
+                component={[Function]}
                 path="/"
-                render={[Function]}
 />,
               <NavLink
                 activeClassName="active"
@@ -268,11 +268,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Wizard Armory",
+                "children": "WIZARD ARMORY",
                 "className": "App-title",
               },
               "ref": null,
-              "rendered": "Wizard Armory",
+              "rendered": "WIZARD ARMORY",
               "type": "h1",
             },
             Object {
@@ -280,8 +280,8 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "component": [Function],
                 "path": "/",
-                "render": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -323,9 +323,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "exact": true,
             "path": "/",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -336,9 +336,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "exact": true,
             "path": "/deck",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,

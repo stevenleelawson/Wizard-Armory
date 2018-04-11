@@ -14,22 +14,15 @@ export class Form extends Component {
     };
   }
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    // this.props.formState(this.state.color);
-
-  }
-
   handleChange = (event) => {
     const { value } = event.target;
-    ///this.setState({ color: value });
+    this.setState({ color: value });
 
     this.props.formState(value);
   }
 
   render() {
     return (
-
         <select className='select' onChange={this.handleChange}>
           <option>Select a Color of Magic</option>
           <option>White</option>
@@ -38,7 +31,6 @@ export class Form extends Component {
           <option>Red</option>
           <option>Black</option>
         </select>
-
     );
   }
 }
