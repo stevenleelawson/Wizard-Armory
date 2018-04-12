@@ -27,4 +27,12 @@ describe('getCards', () => {
     api.getCards(color);
     expect(cardsCleaner).toHaveBeenCalledWith(mockData.mockCardData);
   });
+
+  it('should call an error message on error', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.reject({
+      status: 500
+    }));
+    const expected = new Error('unable to get cards');
+    expect(api.getCards(color)).rejects.toEqual(expected)
+  });
 });

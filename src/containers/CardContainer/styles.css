@@ -4,4 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-image: url('magic_carpet.jpg');
+  background-size: contain;
 }

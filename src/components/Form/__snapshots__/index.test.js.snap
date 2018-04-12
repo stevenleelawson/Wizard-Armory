@@ -20,36 +20,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <select
-          onChange={[Function]}
-          value=""
->
-          <option>
-                    Select a Color of Magic
-          </option>
-          <option>
-                    White
-          </option>
-          <option>
-                    Blue
-          </option>
-          <option>
-                    Green
-          </option>
-          <option>
-                    Red
-          </option>
-          <option>
-                    Black
-          </option>
-</select>,
-        <button
-          type="submit"
->
-          Submit
-</button>,
+        <option>
+          Select a Color of Magic
+</option>,
+        <option>
+          White
+</option>,
+        <option>
+          Blue
+</option>,
+        <option>
+          Green
+</option>,
+        <option>
+          Red
+</option>,
+        <option>
+          Black
+</option>,
       ],
-      "onSubmit": [Function],
+      "className": "select",
+      "onChange": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -58,114 +49,69 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <option>
-              Select a Color of Magic
-</option>,
-            <option>
-              White
-</option>,
-            <option>
-              Blue
-</option>,
-            <option>
-              Green
-</option>,
-            <option>
-              Red
-</option>,
-            <option>
-              Black
-</option>,
-          ],
-          "onChange": [Function],
-          "value": "",
+          "children": "Select a Color of Magic",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Select a Color of Magic",
-            },
-            "ref": null,
-            "rendered": "Select a Color of Magic",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "White",
-            },
-            "ref": null,
-            "rendered": "White",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Blue",
-            },
-            "ref": null,
-            "rendered": "Blue",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Green",
-            },
-            "ref": null,
-            "rendered": "Green",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Red",
-            },
-            "ref": null,
-            "rendered": "Red",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Black",
-            },
-            "ref": null,
-            "rendered": "Black",
-            "type": "option",
-          },
-        ],
-        "type": "select",
+        "rendered": "Select a Color of Magic",
+        "type": "option",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Submit",
-          "type": "submit",
+          "children": "White",
         },
         "ref": null,
-        "rendered": "Submit",
-        "type": "button",
+        "rendered": "White",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Blue",
+        },
+        "ref": null,
+        "rendered": "Blue",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Green",
+        },
+        "ref": null,
+        "rendered": "Green",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Red",
+        },
+        "ref": null,
+        "rendered": "Red",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Black",
+        },
+        "ref": null,
+        "rendered": "Black",
+        "type": "option",
       },
     ],
-    "type": "form",
+    "type": "select",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -174,36 +120,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <select
-            onChange={[Function]}
-            value=""
->
-            <option>
-                        Select a Color of Magic
-            </option>
-            <option>
-                        White
-            </option>
-            <option>
-                        Blue
-            </option>
-            <option>
-                        Green
-            </option>
-            <option>
-                        Red
-            </option>
-            <option>
-                        Black
-            </option>
-</select>,
-          <button
-            type="submit"
->
-            Submit
-</button>,
+          <option>
+            Select a Color of Magic
+</option>,
+          <option>
+            White
+</option>,
+          <option>
+            Blue
+</option>,
+          <option>
+            Green
+</option>,
+          <option>
+            Red
+</option>,
+          <option>
+            Black
+</option>,
         ],
-        "onSubmit": [Function],
+        "className": "select",
+        "onChange": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -212,114 +149,69 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <option>
-                Select a Color of Magic
-</option>,
-              <option>
-                White
-</option>,
-              <option>
-                Blue
-</option>,
-              <option>
-                Green
-</option>,
-              <option>
-                Red
-</option>,
-              <option>
-                Black
-</option>,
-            ],
-            "onChange": [Function],
-            "value": "",
+            "children": "Select a Color of Magic",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Select a Color of Magic",
-              },
-              "ref": null,
-              "rendered": "Select a Color of Magic",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "White",
-              },
-              "ref": null,
-              "rendered": "White",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Blue",
-              },
-              "ref": null,
-              "rendered": "Blue",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Green",
-              },
-              "ref": null,
-              "rendered": "Green",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Red",
-              },
-              "ref": null,
-              "rendered": "Red",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Black",
-              },
-              "ref": null,
-              "rendered": "Black",
-              "type": "option",
-            },
-          ],
-          "type": "select",
+          "rendered": "Select a Color of Magic",
+          "type": "option",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Submit",
-            "type": "submit",
+            "children": "White",
           },
           "ref": null,
-          "rendered": "Submit",
-          "type": "button",
+          "rendered": "White",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Blue",
+          },
+          "ref": null,
+          "rendered": "Blue",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Green",
+          },
+          "ref": null,
+          "rendered": "Green",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Red",
+          },
+          "ref": null,
+          "rendered": "Red",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Black",
+          },
+          "ref": null,
+          "rendered": "Black",
+          "type": "option",
         },
       ],
-      "type": "form",
+      "type": "select",
     },
   ],
   Symbol(enzyme.__options__): Object {

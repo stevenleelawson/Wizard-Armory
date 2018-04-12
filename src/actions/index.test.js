@@ -4,12 +4,14 @@ import * as mockData from '../mockData';
 describe('Actions', () => {
   it('should return an action type of loadCards', () => {
     const cards = mockData.mockCardData;
+    const color = 'Green';
     const expected = {
       type: 'LOAD_CARDS',
-      cards
+      cards,
+      color
     };
 
-    expect(actions.loadCards(cards)).toEqual(expected);
+    expect(actions.loadCards(cards, color)).toEqual(expected);
   });
 
   it('should return an action type of formState', () => {

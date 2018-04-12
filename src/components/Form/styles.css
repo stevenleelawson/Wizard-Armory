@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
 .select {
   width: 20%;
+  margin: auto;
+  border-image: url('border_wood.jpeg') 30 fill;
+  font-family: 'Lora', serif;
+  color: white;
+}
+
+option {
+  margin-left: 2em;
+  text-align: center;
 }

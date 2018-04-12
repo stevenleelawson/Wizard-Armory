@@ -43,7 +43,6 @@ describe('Form', () => {
 
     wrapper.instance().handleChange({target: {value: 'green'}})
     //execution
-    wrapper.instance().handleSubmit(mockEvent);
 
     //assertion
     expect(mockFormState).toHaveBeenCalledWith(expected);

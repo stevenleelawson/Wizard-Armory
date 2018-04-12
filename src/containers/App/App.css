@@ -4,10 +4,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   background-image: url('./battlinwizard.jpg');
@@ -18,6 +14,7 @@
   font-family: 'Lora', serif;
   display: flex;
   flex-direction: column;
+  border: .5px solid black;
 }
 
 .App-title {
