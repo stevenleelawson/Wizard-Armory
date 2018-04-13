@@ -9,11 +9,11 @@ describe('cardsReducer', () => {
 
   it('should update state tree with an object of card-colors', () => {
     const mockObject = {name: 'taco', id: 2, imageUrl: 'www.taco.com'}
-    const totalObject = {
+    const mockColor = 'Green'
+    const actualReducer = cardsReducer(undefined, actions.loadCards(mockObject, mockColor))
+    const expected = {
       Green: mockObject
     }
-    const mockColor = 'Green'
-    expect(cardsReducer(undefined, actions.loadCards(mockObject, mockColor)))
-      .toEqual(totalObject);
+    expect(actualReducer).toEqual(expected);
   });
 });
