@@ -3,37 +3,23 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Card from '../../components/Card';
 import * as actions from '../../actions';
+import * as api from '../../apiCalls';
 import './styles.css';
 
 export const CardContainer = ({cards, addToDeck, color}) => {
   let displayCards;
-  if (Object.keys(cards).length) {
-    if (color === 'White') {
-      let smallArray = cards.White.filter( card => card.imageUrl)
-      console.log('smol',smallArray)
-      displayCards = smallArray.map( card => {
-        return <Card
-          info={card}
-          imageUrl ={card.imageUrl}
-          key={card.id}
-          addToDeck={addToDeck}
-        />
-      })
-    }
-
+  if(cards[color]) {
+    const smallArray = cards[color].filter( card => card.imageUrl)
+    displayCards = smallArray.map( card => {
+      return <Card
+        info={card}
+        imageUrl={card.imageUrl}
+        key={card.id}
+        addToDeck={addToDeck}
+      />
+    })
   }
-  console.log('kerds', displayCards)
-//   const displayCards = Object.keys(cards).map( color => cards[color].map( card => {
-//     return <Card
-//       info={card}
-//       imageUrl = {card.imageUrl}
-//       key = {card.id}
-//       addToDeck={addToDeck}
-//     />;
-//   })
-// );
   return (
-    // <div>{smallArray}</div>
     <div className='card-container'>{displayCards}</div>
 
   );

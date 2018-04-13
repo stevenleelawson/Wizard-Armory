@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './styles.css';
 
 const Card = ({imageUrl, id, info, addToDeck}) => {
-  console.log('addToDeck', addToDeck)
   const handleDeckBtnClick = () => {
     addToDeck(info)
   }
