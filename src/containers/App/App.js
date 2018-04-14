@@ -6,7 +6,7 @@ import { Route, NavLink, withRouter } from 'react-router-dom';
 import './App.css';
 import CardContainer from '../CardContainer';
 import DeckContainer from '../DeckContainer';
-import Form from '../../components/Form';
+import Form from '../Form';
 import PropTypes from 'prop-types';
 
 export class App extends Component {

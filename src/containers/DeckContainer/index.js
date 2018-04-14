@@ -4,9 +4,9 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Card from '../../components/Card';
 import * as actions from '../../actions';
+import './styles.css';
 
 export const DeckContainer = ({cards, deck, addToDeck}) => {
-  console.log('hhhhihiiiiii')
   const displayDeckCards = deck.map( card => {
     return <Card
       info={card}
@@ -16,7 +16,7 @@ export const DeckContainer = ({cards, deck, addToDeck}) => {
     />;
   });
   return (
-    <div>{displayDeckCards}</div>
+    <div className='deck-card-container'>{displayDeckCards}</div>
   );
 };
 
