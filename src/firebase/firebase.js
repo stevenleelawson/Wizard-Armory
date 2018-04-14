@@ -15,4 +15,4 @@ const auth = firebase.auth();
 export {
   auth,
 }
-// export default firebase;
+export default firebase;

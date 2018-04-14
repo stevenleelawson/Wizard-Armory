@@ -7,14 +7,15 @@ class SignInForm extends Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      errorMsg: false
     }
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const { email, password } = this.state;
-    auth.doSignInWithEmailAndPassword(email, password).catch((error) => console.log(error));
+    const { email, password, errorMsg } = this.state;
+    auth.doSignInWithEmailAndPassword(email, password).catch((error) => this.setState({errorMsg: 'Please create an account'}));
       this.setState({
         email: '',
         password: ''
@@ -29,7 +30,7 @@ class SignInForm extends Component {
   }
 
   render() {
-    const { email, password } = this.state;
+    const { email, password, errorMsg } = this.state;
     return (
       <div>
         <h1>Sign In</h1>
@@ -50,7 +51,7 @@ class SignInForm extends Component {
           />
           <button type='submit'>Submit</button>
         </form>
-
+        {errorMsg && <p>{errorMsg}</p>}
       </div>
     )
   }

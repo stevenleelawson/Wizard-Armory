@@ -7,14 +7,15 @@ class SignUpForm extends Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      errorMsg: false
     }
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
     const { email, password } = this.state;
-    auth.doCreateUserWithEmailAndPassword(email, password).catch((error) => console.log(error));
+    auth.doCreateUserWithEmailAndPassword(email, password).catch((error) => this.setState({errorMsg: 'User already exists, please enter alternate email and password'}));
       this.setState({
         email: '',
         password: ''
@@ -29,25 +30,30 @@ class SignUpForm extends Component {
   }
 
   render() {
-    const { email, password } = this.state;
+    const { email, password, errorMsg } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input
-          type='email'
-          name='email'
-          placeholder='email'
-          value={email}
-          onChange={this.handleChange}
-         />
-        <input
-          type='password'
-          name='password'
-          placeholder='password'
-          value={password}
-          onChange={this.handleChange}
-         />
-        <button type='submit'>Submit</button>
-      </form>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type='email'
+            name='email'
+            placeholder='email'
+            value={email}
+            onChange={this.handleChange}
+          />
+          <input
+            type='password'
+            name='password'
+            placeholder='password'
+            value={password}
+            onChange={this.handleChange}
+          />
+          <button type='submit'>Submit</button>
+        </form>
+        {
+          errorMsg && <p>{errorMsg}</p>
+        }
+      </div>
     )
   }
 }
