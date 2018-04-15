@@ -4,9 +4,8 @@
 .select {
   width: 20%;
   margin: auto;
-  border-image: url('border_wood.jpeg') 30 fill;
   font-family: 'Lora', serif;
-  color: white;
+  color: black;
 }
 
 option {

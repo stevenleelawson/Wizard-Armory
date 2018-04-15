@@ -14,9 +14,7 @@ import SignInForm from '../../components/SignInForm';
 export class App extends Component {
   componentDidUpdate(prevProps, nextProps) {
     if (prevProps !== nextProps) {
-      console.log('prev', prevProps)
       this.fetchCards();
-
     }
   }
 
@@ -27,8 +25,6 @@ export class App extends Component {
       const cards = await api.getCards(this.props.color);
       this.props.loadCards(cards, color)
     }
-    console.log('colorprops',this.props.cards[color])
-
   }
 
   render() {
@@ -38,10 +34,10 @@ export class App extends Component {
           <h1 className="App-title">WIZARD ARMORY</h1>
           <Route path='/' component={Form} />
           <div className='nav-container'>
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/deck'>MyDeck</NavLink>
-            <NavLink to= 'signup'>Sign Up</NavLink>
-            <NavLink to= 'signin'>Sign In</NavLink>
+            <NavLink className='nav-link' to='/'>Home</NavLink>
+            <NavLink className='nav-link' to='/deck'>MyDeck</NavLink>
+            <NavLink className='nav-link' to= 'signup'>Sign Up</NavLink>
+            <NavLink className='nav-link' to= 'signin'>Sign In</NavLink>
           </div>
         </header>
         <Route exact path='/' component={CardContainer} />

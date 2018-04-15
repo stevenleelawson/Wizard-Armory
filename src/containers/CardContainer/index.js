@@ -34,5 +34,5 @@ export const mapDispathToProps = (dispatch) => ({
 export default connect(mapStateToProps, mapDispathToProps)(CardContainer);
 
 CardContainer.propTypes = {
-  cards: PropTypes.array
+  cards: PropTypes.object
 };
