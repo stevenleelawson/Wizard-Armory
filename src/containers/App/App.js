@@ -8,13 +8,13 @@ import CardContainer from '../CardContainer';
 import DeckContainer from '../DeckContainer';
 import Form from '../Form';
 import PropTypes from 'prop-types';
+import SignUpForm from '../../components/SignUpForm';
+import SignInForm from '../../components/SignInForm';
 
 export class App extends Component {
   componentDidUpdate(prevProps, nextProps) {
     if (prevProps !== nextProps) {
-      console.log('prev', prevProps)
       this.fetchCards();
-
     }
   }
 
@@ -25,8 +25,6 @@ export class App extends Component {
       const cards = await api.getCards(this.props.color);
       this.props.loadCards(cards, color)
     }
-    console.log('colorprops',this.props.cards[color])
-
   }
 
   render() {
@@ -35,11 +33,17 @@ export class App extends Component {
         <header className="App-header">
           <h1 className="App-title">WIZARD ARMORY</h1>
           <Route path='/' component={Form} />
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/deck'>MyDeck</NavLink>
+          <div className='nav-container'>
+            <NavLink className='nav-link' to='/'>Home</NavLink>
+            <NavLink className='nav-link' to='/deck'>MyDeck</NavLink>
+            <NavLink className='nav-link' to= 'signup'>Sign Up</NavLink>
+            <NavLink className='nav-link' to= 'signin'>Sign In</NavLink>
+          </div>
         </header>
         <Route exact path='/' component={CardContainer} />
         <Route exact path='/deck' component={DeckContainer} />
+        <Route exact path='/signup' component={SignUpForm} />
+        <Route exact path='/signin' component={SignInForm} />
       </div>
     );
   }
