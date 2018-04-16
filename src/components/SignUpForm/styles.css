@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.sign-up-input {
+  width: 15vw;
+  margin: 1rem;
+  border: none;
+  border-bottom: 1px solid #4C1502;
+}
+
+.sign-in-btn {
+  width: 15.1vw;
+  border: .1px solid #4C1502;
+  font-family: 'Lora', serif;
+  margin-top: 1.5rem;
+}
+
+.sign-in-btn:hover {
+  background: #F3C969;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './styles.css';
 
 import SignOutButton from '../SignOutButton';
 
@@ -18,7 +19,7 @@ const Navigation = ({ authUser }) =>
       <NavLink className='nav-link' to='/deck'>MyDeck</NavLink>
       <NavLink className='nav-link' to= 'signup'>Sign Up</NavLink>
       <NavLink className='nav-link' to= 'signin'>Sign In</NavLink>
-      <SignOutButton />
+      <SignOutButton className='nav-btn'/>
     </div>
 
   const NavigationNonAuth = () =>
