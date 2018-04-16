@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { auth } from '../../firebase';
+import './styles.css';
 
 class SignInForm extends Component {
   constructor(props) {
@@ -33,14 +34,15 @@ class SignInForm extends Component {
     const { email, password, errorMsg } = this.state;
     return (
       <div>
-        <h1>Sign In</h1>
-        <form onSubmit={this.handleSubmit}>
+        <h5>Sign In</h5>
+        <form className='sign-in' onSubmit={this.handleSubmit}>
           <input
             type='email'
             name='email'
             placeholder='email'
             value={email}
             onChange={this.handleChange}
+            className='sign-in-input'
           />
           <input
             type='password'
@@ -48,8 +50,9 @@ class SignInForm extends Component {
             placeholder='password'
             value={password}
             onChange={this.handleChange}
+            className='sign-in-input'
           />
-          <button type='submit'>Submit</button>
+          <button className='sign-in-btn' type='submit'>ENTER</button>
         </form>
         {errorMsg && <p>{errorMsg}</p>}
       </div>
