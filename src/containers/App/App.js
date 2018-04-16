@@ -10,11 +10,36 @@ import Form from '../Form';
 import PropTypes from 'prop-types';
 import SignUpForm from '../../components/SignUpForm';
 import SignInForm from '../../components/SignInForm';
+import SignOutButton from '../../components/SignOutButton';
+import Navigation from '../../components/Navigation';
+import { firebase } from '../../firebase';
 
 export class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      authUser: null
+    }
+  }
+
+  resetDeck = () => {
+    this.props.clearDeck();
+  }
+
+  componentDidMount() {
+    firebase.auth.onAuthStateChanged(authUser => {
+      authUser
+        ? this.setState(() => ({ authUser }))
+        : this.setState(() => ({ authUser: null}))
+    })
+
+  }
+
   componentDidUpdate(prevProps, nextProps) {
     if (prevProps !== nextProps) {
       this.fetchCards();
+      this.resetDeck()
     }
   }
 
@@ -33,12 +58,14 @@ export class App extends Component {
         <header className="App-header">
           <h1 className="App-title">WIZARD ARMORY</h1>
           <Route path='/' component={Form} />
-          <div className='nav-container'>
+          <Navigation authUser={this.state.authUser} />
+          {/* <div className='nav-container'>
             <NavLink className='nav-link' to='/'>Home</NavLink>
             <NavLink className='nav-link' to='/deck'>MyDeck</NavLink>
             <NavLink className='nav-link' to= 'signup'>Sign Up</NavLink>
             <NavLink className='nav-link' to= 'signin'>Sign In</NavLink>
-          </div>
+            <SignOutButton />
+          </div> */}
         </header>
         <Route exact path='/' component={CardContainer} />
         <Route exact path='/deck' component={DeckContainer} />
@@ -56,7 +83,8 @@ export const mapStateToProps = state => ({
 
 export const mapDispatchToProps = dispatch => ({
   loadCards: (cards, color) => dispatch(actions.loadCards(cards, color)),
-  formState: color => dispatch(actions.formState(color))
+  formState: color => dispatch(actions.formState(color)),
+  clearDeck: () => dispatch(actions.clearDeck())
 });
 
 
