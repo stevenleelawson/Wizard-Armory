@@ -13,3 +13,7 @@ export const addToDeck = (card) => ({
   type: 'ADD_TO_DECK',
   card
 });
+
+export const clearDeck = () => ({
+  type: 'CLEAR_DECK'
+})
