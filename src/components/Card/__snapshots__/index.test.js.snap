@@ -4,7 +4,30 @@ exports[`Card should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Card />,
+  Symbol(enzyme.__unrendered__): <Card
+    deck={
+        Array [
+            Object {
+              "artist": "Milivoj Ćeran",
+              "cmc": 1,
+              "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+              "layout": "normal",
+              "manaCost": "{G}",
+              "multiverseid": 439491,
+              "name": "As Luck Would Have It",
+              "number": "102",
+              "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "originalType": "Enchantment",
+              "rarity": "Rare",
+              "set": "UST",
+              "setName": "Unstable",
+              "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "type": "Enchantment",
+            },
+          ]
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -21,7 +44,7 @@ ShallowWrapper {
         alt="magic card"
         src={undefined}
 />,
-      "className": "card",
+      "className": "card ",
       "onClick": [Function],
     },
     "ref": null,
@@ -49,7 +72,7 @@ ShallowWrapper {
           alt="magic card"
           src={undefined}
 />,
-        "className": "card",
+        "className": "card ",
         "onClick": [Function],
       },
       "ref": null,

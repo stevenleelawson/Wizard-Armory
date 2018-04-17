@@ -13,11 +13,13 @@ export const CardContainer = ({cards, addToDeck, color, deck}) => {
     displayCards = smallArray.map( card => {
       return <Card
         info={card}
+        id={card.id}
         imageUrl={card.imageUrl}
         key={card.id}
         addToDeck={addToDeck}
-        deck={deck}
         smallArray={smallArray}
+        deck={deck}
+        cards={cards}
       />
     })
   }
