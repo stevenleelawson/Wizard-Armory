@@ -6,9 +6,11 @@ import * as actions from '../../actions';
 import * as api from '../../apiCalls';
 import './styles.css';
 
-export const CardContainer = ({cards, addToDeck, color}) => {
+export const CardContainer = ({cards, addToDeck, color, deck}) => {
+  let selected;
   let displayCards;
   if(cards[color]) {
+    selected = deck.filter( card => console.log(card)) ? 'isSelected': ''
     const smallArray = cards[color].filter( card => card.imageUrl)
     displayCards = smallArray.map( card => {
       return <Card
@@ -16,6 +18,7 @@ export const CardContainer = ({cards, addToDeck, color}) => {
         imageUrl={card.imageUrl}
         key={card.id}
         addToDeck={addToDeck}
+        deck={deck}
       />
     })
   }
@@ -25,7 +28,7 @@ export const CardContainer = ({cards, addToDeck, color}) => {
   );
 };
 
-export const mapStateToProps = ({cards, color}) => ({cards, color});
+export const mapStateToProps = ({cards, color, deck}) => ({cards, color, deck});
 
 export const mapDispathToProps = (dispatch) => ({
   addToDeck: card => dispatch(actions.addToDeck(card))

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  flex-direction: column;
+  width: 100%;
+  height: 65vh;
+}
+
 .sign-up {
   display: flex;
   flex-direction: column;
@@ -24,4 +34,8 @@
 
 .sign-in-btn:hover {
   background: #F3C969;
+}
+
+h5 {
+  margin-top: -5rem;
 }

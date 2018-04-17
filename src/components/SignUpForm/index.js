@@ -33,7 +33,8 @@ class SignUpForm extends Component {
   render() {
     const { email, password, errorMsg } = this.state;
     return (
-      <div>
+      
+      <div className='sign-up-container'>
         <h5>Sign Up</h5>
         <form className='sign-up' onSubmit={this.handleSubmit}>
           <input

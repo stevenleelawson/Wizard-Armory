@@ -4,7 +4,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: url('../CardContainer/magic_carpet.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.nav-container {
+  margin-top: 1.5rem;
 }
