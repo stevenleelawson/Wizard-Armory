@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import './styles.css';
 import { NavLink } from 'react-router-dom';
 
-const Card = ({imageUrl, id, info, addToDeck, deck}) => {
+const Card = ({imageUrl, id, info, addToDeck, deck, smallArray}) => {
+
+  console.log('deeeeeck', deck)
 
 
 
