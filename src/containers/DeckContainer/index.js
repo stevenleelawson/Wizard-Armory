@@ -29,5 +29,5 @@ export const mapDispatchToProps = (dispatch) => ({
 export default connect(mapStateToProps, mapDispatchToProps)(DeckContainer);
 
 DeckContainer.propTypes = {
-  cards: PropTypes.array
+  cards: PropTypes.object
 };

@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInForm should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignInForm />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h5>
+          Sign In
+</h5>,
+        <form
+          className="sign-in"
+          onSubmit={[Function]}
+>
+          <input
+                    className="sign-in-input"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="email"
+                    type="email"
+                    value=""
+          />
+          <input
+                    className="sign-in-input"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="password"
+                    type="password"
+                    value=""
+          />
+          <button
+                    className="sign-in-btn"
+                    type="submit"
+          >
+                    ENTER
+          </button>
+</form>,
+        false,
+      ],
+      "className": "sign-in-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Sign In",
+        },
+        "ref": null,
+        "rendered": "Sign In",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              className="sign-in-input"
+              name="email"
+              onChange={[Function]}
+              placeholder="email"
+              type="email"
+              value=""
+/>,
+            <input
+              className="sign-in-input"
+              name="password"
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+/>,
+            <button
+              className="sign-in-btn"
+              type="submit"
+>
+              ENTER
+</button>,
+          ],
+          "className": "sign-in",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "sign-in-input",
+              "name": "email",
+              "onChange": [Function],
+              "placeholder": "email",
+              "type": "email",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "sign-in-input",
+              "name": "password",
+              "onChange": [Function],
+              "placeholder": "password",
+              "type": "password",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ENTER",
+              "className": "sign-in-btn",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "ENTER",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+      false,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h5>
+            Sign In
+</h5>,
+          <form
+            className="sign-in"
+            onSubmit={[Function]}
+>
+            <input
+                        className="sign-in-input"
+                        name="email"
+                        onChange={[Function]}
+                        placeholder="email"
+                        type="email"
+                        value=""
+            />
+            <input
+                        className="sign-in-input"
+                        name="password"
+                        onChange={[Function]}
+                        placeholder="password"
+                        type="password"
+                        value=""
+            />
+            <button
+                        className="sign-in-btn"
+                        type="submit"
+            >
+                        ENTER
+            </button>
+</form>,
+          false,
+        ],
+        "className": "sign-in-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Sign In",
+          },
+          "ref": null,
+          "rendered": "Sign In",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                className="sign-in-input"
+                name="email"
+                onChange={[Function]}
+                placeholder="email"
+                type="email"
+                value=""
+/>,
+              <input
+                className="sign-in-input"
+                name="password"
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+/>,
+              <button
+                className="sign-in-btn"
+                type="submit"
+>
+                ENTER
+</button>,
+            ],
+            "className": "sign-in",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "sign-in-input",
+                "name": "email",
+                "onChange": [Function],
+                "placeholder": "email",
+                "type": "email",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "sign-in-input",
+                "name": "password",
+                "onChange": [Function],
+                "placeholder": "password",
+                "type": "password",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ENTER",
+                "className": "sign-in-btn",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "ENTER",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+        false,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
