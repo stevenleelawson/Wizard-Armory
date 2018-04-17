@@ -33,7 +33,7 @@ class SignInForm extends Component {
   render() {
     const { email, password, errorMsg } = this.state;
     return (
-      <div>
+      <div className='sign-in-container'>
         <h5>Sign In</h5>
         <form className='sign-in' onSubmit={this.handleSubmit}>
           <input

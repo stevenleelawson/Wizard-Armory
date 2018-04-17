@@ -6,13 +6,15 @@ import Card from '../../components/Card';
 import * as actions from '../../actions';
 import './styles.css';
 
-export const DeckContainer = ({cards, deck, addToDeck}) => {
+export const DeckContainer = ({cards, deck, addToDeck, smallArray}) => {
+  
   const displayDeckCards = deck.map( card => {
     return <Card
       info={card}
       imageUrl = {card.imageUrl}
       key = {card.id}
       addToDeck={addToDeck}
+      smallArray={smallArray}
     />;
   });
   return (
@@ -29,5 +31,5 @@ export const mapDispatchToProps = (dispatch) => ({
 export default connect(mapStateToProps, mapDispatchToProps)(DeckContainer);
 
 DeckContainer.propTypes = {
-  cards: PropTypes.array
+  cards: PropTypes.object
 };

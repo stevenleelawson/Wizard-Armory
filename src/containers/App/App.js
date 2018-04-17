@@ -57,15 +57,8 @@ export class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">WIZARD ARMORY</h1>
-          <Route path='/' component={Form} />
+          <Route exact path='/' component={Form} />
           <Navigation authUser={this.state.authUser} />
-          {/* <div className='nav-container'>
-            <NavLink className='nav-link' to='/'>Home</NavLink>
-            <NavLink className='nav-link' to='/deck'>MyDeck</NavLink>
-            <NavLink className='nav-link' to= 'signup'>Sign Up</NavLink>
-            <NavLink className='nav-link' to= 'signin'>Sign In</NavLink>
-            <SignOutButton />
-          </div> */}
         </header>
         <Route exact path='/' component={CardContainer} />
         <Route exact path='/deck' component={DeckContainer} />

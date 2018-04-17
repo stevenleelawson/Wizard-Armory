@@ -30,40 +30,12 @@ ShallowWrapper {
           </h1>
           <Route
                     component={[Function]}
+                    exact={true}
                     path="/"
           />
-          <div
-                    className="nav-container"
-          >
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              to="/"
-                    >
-                              Home
-                    </NavLink>
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              to="/deck"
-                    >
-                              MyDeck
-                    </NavLink>
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              to="signup"
-                    >
-                              Sign Up
-                    </NavLink>
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              to="signin"
-                    >
-                              Sign In
-                    </NavLink>
-          </div>
+          <Navigation
+                    authUser={null}
+          />
 </header>,
         <Route
           component={[Function]}
@@ -103,40 +75,12 @@ ShallowWrapper {
 </h1>,
             <Route
               component={[Function]}
+              exact={true}
               path="/"
 />,
-            <div
-              className="nav-container"
->
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            to="/"
-              >
-                            Home
-              </NavLink>
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            to="/deck"
-              >
-                            MyDeck
-              </NavLink>
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            to="signup"
-              >
-                            Sign Up
-              </NavLink>
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            to="signin"
-              >
-                            Sign In
-              </NavLink>
-</div>,
+            <Navigation
+              authUser={null}
+/>,
           ],
           "className": "App-header",
         },
@@ -160,6 +104,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "component": [Function],
+              "exact": true,
               "path": "/",
             },
             "ref": null,
@@ -169,100 +114,13 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "function",
             "props": Object {
-              "children": Array [
-                <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  to="/"
->
-                  Home
-</NavLink>,
-                <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  to="/deck"
->
-                  MyDeck
-</NavLink>,
-                <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  to="signup"
->
-                  Sign Up
-</NavLink>,
-                <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  to="signin"
->
-                  Sign In
-</NavLink>,
-              ],
-              "className": "nav-container",
+              "authUser": null,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "Home",
-                  "to": "/",
-                },
-                "ref": null,
-                "rendered": "Home",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "MyDeck",
-                  "to": "/deck",
-                },
-                "ref": null,
-                "rendered": "MyDeck",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "Sign Up",
-                  "to": "signup",
-                },
-                "ref": null,
-                "rendered": "Sign Up",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "Sign In",
-                  "to": "signin",
-                },
-                "ref": null,
-                "rendered": "Sign In",
-                "type": [Function],
-              },
-            ],
-            "type": "div",
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "header",
@@ -339,40 +197,12 @@ ShallowWrapper {
             </h1>
             <Route
                         component={[Function]}
+                        exact={true}
                         path="/"
             />
-            <div
-                        className="nav-container"
-            >
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    to="/"
-                        >
-                                    Home
-                        </NavLink>
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    to="/deck"
-                        >
-                                    MyDeck
-                        </NavLink>
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    to="signup"
-                        >
-                                    Sign Up
-                        </NavLink>
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    to="signin"
-                        >
-                                    Sign In
-                        </NavLink>
-            </div>
+            <Navigation
+                        authUser={null}
+            />
 </header>,
           <Route
             component={[Function]}
@@ -412,40 +242,12 @@ ShallowWrapper {
 </h1>,
               <Route
                 component={[Function]}
+                exact={true}
                 path="/"
 />,
-              <div
-                className="nav-container"
->
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                to="/"
-                >
-                                Home
-                </NavLink>
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                to="/deck"
-                >
-                                MyDeck
-                </NavLink>
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                to="signup"
-                >
-                                Sign Up
-                </NavLink>
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                to="signin"
-                >
-                                Sign In
-                </NavLink>
-</div>,
+              <Navigation
+                authUser={null}
+/>,
             ],
             "className": "App-header",
           },
@@ -469,6 +271,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "component": [Function],
+                "exact": true,
                 "path": "/",
               },
               "ref": null,
@@ -478,100 +281,13 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
-                "children": Array [
-                  <NavLink
-                    activeClassName="active"
-                    ariaCurrent="true"
-                    to="/"
->
-                    Home
-</NavLink>,
-                  <NavLink
-                    activeClassName="active"
-                    ariaCurrent="true"
-                    to="/deck"
->
-                    MyDeck
-</NavLink>,
-                  <NavLink
-                    activeClassName="active"
-                    ariaCurrent="true"
-                    to="signup"
->
-                    Sign Up
-</NavLink>,
-                  <NavLink
-                    activeClassName="active"
-                    ariaCurrent="true"
-                    to="signin"
->
-                    Sign In
-</NavLink>,
-                ],
-                "className": "nav-container",
+                "authUser": null,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "activeClassName": "active",
-                    "ariaCurrent": "true",
-                    "children": "Home",
-                    "to": "/",
-                  },
-                  "ref": null,
-                  "rendered": "Home",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "activeClassName": "active",
-                    "ariaCurrent": "true",
-                    "children": "MyDeck",
-                    "to": "/deck",
-                  },
-                  "ref": null,
-                  "rendered": "MyDeck",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "activeClassName": "active",
-                    "ariaCurrent": "true",
-                    "children": "Sign Up",
-                    "to": "signup",
-                  },
-                  "ref": null,
-                  "rendered": "Sign Up",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "activeClassName": "active",
-                    "ariaCurrent": "true",
-                    "children": "Sign In",
-                    "to": "signin",
-                  },
-                  "ref": null,
-                  "rendered": "Sign In",
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "header",
