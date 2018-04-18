@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeckContainer should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    deck={
+        Array [
+            Object {
+              "artist": "Milivoj Ćeran",
+              "cmc": 1,
+              "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+              "layout": "normal",
+              "manaCost": "{G}",
+              "multiverseid": 439491,
+              "name": "As Luck Would Have It",
+              "number": "102",
+              "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "originalType": "Enchantment",
+              "rarity": "Rare",
+              "set": "UST",
+              "setName": "Unstable",
+              "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "type": "Enchantment",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          addToDeck={undefined}
+          deck={
+                    Array [
+                              Object {
+                                "artist": "Milivoj Ćeran",
+                                "cmc": 1,
+                                "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+                                "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+                                "layout": "normal",
+                                "manaCost": "{G}",
+                                "multiverseid": 439491,
+                                "name": "As Luck Would Have It",
+                                "number": "102",
+                                "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                                "originalType": "Enchantment",
+                                "rarity": "Rare",
+                                "set": "UST",
+                                "setName": "Unstable",
+                                "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                                "type": "Enchantment",
+                              },
+                            ]
+          }
+          id="8d2722825dfa475154e0c87ba72c47528c4cf485"
+          imageUrl="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card"
+          info={
+                    Object {
+                              "artist": "Milivoj Ćeran",
+                              "cmc": 1,
+                              "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+                              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+                              "layout": "normal",
+                              "manaCost": "{G}",
+                              "multiverseid": 439491,
+                              "name": "As Luck Would Have It",
+                              "number": "102",
+                              "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                              "originalType": "Enchantment",
+                              "rarity": "Rare",
+                              "set": "UST",
+                              "setName": "Unstable",
+                              "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                              "type": "Enchantment",
+                            }
+          }
+/>,
+      ],
+      "className": "deck-card-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+        "nodeType": "function",
+        "props": Object {
+          "addToDeck": undefined,
+          "deck": Array [
+            Object {
+              "artist": "Milivoj Ćeran",
+              "cmc": 1,
+              "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+              "layout": "normal",
+              "manaCost": "{G}",
+              "multiverseid": 439491,
+              "name": "As Luck Would Have It",
+              "number": "102",
+              "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "originalType": "Enchantment",
+              "rarity": "Rare",
+              "set": "UST",
+              "setName": "Unstable",
+              "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "type": "Enchantment",
+            },
+          ],
+          "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+          "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+          "info": Object {
+            "artist": "Milivoj Ćeran",
+            "cmc": 1,
+            "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+            "layout": "normal",
+            "manaCost": "{G}",
+            "multiverseid": 439491,
+            "name": "As Luck Would Have It",
+            "number": "102",
+            "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+            "originalType": "Enchantment",
+            "rarity": "Rare",
+            "set": "UST",
+            "setName": "Unstable",
+            "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+            "type": "Enchantment",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            addToDeck={undefined}
+            deck={
+                        Array [
+                                    Object {
+                                      "artist": "Milivoj Ćeran",
+                                      "cmc": 1,
+                                      "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+                                      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+                                      "layout": "normal",
+                                      "manaCost": "{G}",
+                                      "multiverseid": 439491,
+                                      "name": "As Luck Would Have It",
+                                      "number": "102",
+                                      "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                                      "originalType": "Enchantment",
+                                      "rarity": "Rare",
+                                      "set": "UST",
+                                      "setName": "Unstable",
+                                      "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                                      "type": "Enchantment",
+                                    },
+                                  ]
+            }
+            id="8d2722825dfa475154e0c87ba72c47528c4cf485"
+            imageUrl="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card"
+            info={
+                        Object {
+                                    "artist": "Milivoj Ćeran",
+                                    "cmc": 1,
+                                    "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+                                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+                                    "layout": "normal",
+                                    "manaCost": "{G}",
+                                    "multiverseid": 439491,
+                                    "name": "As Luck Would Have It",
+                                    "number": "102",
+                                    "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                                    "originalType": "Enchantment",
+                                    "rarity": "Rare",
+                                    "set": "UST",
+                                    "setName": "Unstable",
+                                    "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                                    "type": "Enchantment",
+                                  }
+            }
+/>,
+        ],
+        "className": "deck-card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+          "nodeType": "function",
+          "props": Object {
+            "addToDeck": undefined,
+            "deck": Array [
+              Object {
+                "artist": "Milivoj Ćeran",
+                "cmc": 1,
+                "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+                "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+                "layout": "normal",
+                "manaCost": "{G}",
+                "multiverseid": 439491,
+                "name": "As Luck Would Have It",
+                "number": "102",
+                "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                "originalType": "Enchantment",
+                "rarity": "Rare",
+                "set": "UST",
+                "setName": "Unstable",
+                "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+                "type": "Enchantment",
+              },
+            ],
+            "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+            "info": Object {
+              "artist": "Milivoj Ćeran",
+              "cmc": 1,
+              "id": "8d2722825dfa475154e0c87ba72c47528c4cf485",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439491&type=card",
+              "layout": "normal",
+              "manaCost": "{G}",
+              "multiverseid": 439491,
+              "name": "As Luck Would Have It",
+              "number": "102",
+              "originalText": "Hexproof Whenever you roll a die, put a number of luck, counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "originalType": "Enchantment",
+              "rarity": "Rare",
+              "set": "UST",
+              "setName": "Unstable",
+              "text": "Hexproof Whenever you roll a die, put a number of luck counters on As Luck Would Have It equal to the result. Then if there are 100 or more luck counters on As Luck Would Have It, you win the game. (Count both rolls if you reroll a die.)",
+              "type": "Enchantment",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -3,18 +3,21 @@ import { App, mapDispatchToProps, mapStateToProps } from './App';
 import { shallow } from 'enzyme';
 import * as actions from '../../actions';
 import * as mockData from '../../mockData';
+import * as api from '../../apiCalls';
+
 
 
 jest.mock('../../apiCalls');
 
 describe('App', () => {
+  let wrapper;
   let mockLoadCards;
   beforeEach( () => {
     mockLoadCards = jest.fn();
   });
 
   it('should match the snapshot', () => {
-    const wrapper = shallow(
+    wrapper = shallow(
       <App
         loadCards={mockLoadCards}
       />,
@@ -23,6 +26,19 @@ describe('App', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should be able to fetch cards', () => {
+    wrapper = shallow(
+      <App
+        loadCards={mockLoadCards}
+        cards={mockData.mockCleanCard}
+      />,
+      { disableLifecycleMethods: true }
+    );
+    wrapper.instance().fetchCards();
+    expect(api.getCards).toHaveBeenCalled();
+  });
+
 });
 
 describe('mapDispatchToProps', () => {
@@ -30,7 +46,7 @@ describe('mapDispatchToProps', () => {
     const color = 'Green';
     const mockDispatch = jest.fn();
     const mapped = mapDispatchToProps(mockDispatch);
-    const expected = actions.loadCards(mockData.mockCleanCard, color)
+    const expected = actions.loadCards(mockData.mockCleanCard, color);
     mapped.loadCards(mockData.mockCleanCard, color);
 
     expect(mockDispatch).toHaveBeenCalledWith(expected);
@@ -54,8 +70,8 @@ describe('mapStateToProps', () => {
   });
 
   it('should return an object with cards equal to an array', () => {
-    const expected = { cards: mockData.mockCleanCard}
-    const actual = mapStateToProps(expected)
-    expect(actual).toEqual(expected)
+    const expected = { cards: mockData.mockCleanCard};
+    const actual = mapStateToProps(expected);
+    expect(actual).toEqual(expected);
   });
 });

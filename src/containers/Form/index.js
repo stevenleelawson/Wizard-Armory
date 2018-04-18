@@ -23,14 +23,14 @@ export class Form extends Component {
 
   render() {
     return (
-        <select className='select' onChange={this.handleChange}>
-          <option>Select a Color of Magic</option>
-          <option>White</option>
-          <option>Blue</option>
-          <option>Green</option>
-          <option>Red</option>
-          <option>Black</option>
-        </select>
+      <select className='select' onChange={this.handleChange}>
+        <option>Select a Color of Magic</option>
+        <option>White</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Red</option>
+        <option>Black</option>
+      </select>
     );
   }
 }

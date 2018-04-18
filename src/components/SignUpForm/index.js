@@ -10,30 +10,34 @@ class SignUpForm extends Component {
       email: '',
       password: '',
       errorMsg: false
-    }
+    };
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
     const { email, password } = this.state;
-    auth.doCreateUserWithEmailAndPassword(email, password).catch((error) => this.setState({errorMsg: 'User already exists, please enter alternate email and password'}));
-      this.setState({
-        email: '',
-        password: ''
-      })
+    auth.doCreateUserWithEmailAndPassword(email, password)
+    /* eslint-disable */
+      .catch((error) =>
+    /* eslint-enable */
+        this.setState({errorMsg: 'User already exists'}));
+    this.setState({
+      email: '',
+      password: ''
+    });
   }
 
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
       [name]: value
-    })
+    });
   }
 
   render() {
     const { email, password, errorMsg } = this.state;
     return (
-      
+
       <div className='sign-up-container'>
         <h5>Sign Up</h5>
         <form className='sign-up' onSubmit={this.handleSubmit}>
@@ -59,7 +63,7 @@ class SignUpForm extends Component {
           errorMsg && <p>{errorMsg}</p>
         }
       </div>
-    )
+    );
   }
 }
 

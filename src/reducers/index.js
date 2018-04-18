@@ -7,7 +7,7 @@ const rootReducer = combineReducers({
   cards: cardsReducer,
   color: formStateReducer,
   deck: addToDeckReducer
-})
+});
 
 
 export default rootReducer;

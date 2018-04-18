@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as api from '../../apiCalls';
 import * as actions from '../../actions';
 import { connect } from 'react-redux';
-import { Route, NavLink, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import './App.css';
 import CardContainer from '../CardContainer';
 import DeckContainer from '../DeckContainer';
@@ -10,7 +10,6 @@ import Form from '../Form';
 import PropTypes from 'prop-types';
 import SignUpForm from '../../components/SignUpForm';
 import SignInForm from '../../components/SignInForm';
-import SignOutButton from '../../components/SignOutButton';
 import Navigation from '../../components/Navigation';
 import { firebase } from '../../firebase';
 
@@ -20,35 +19,30 @@ export class App extends Component {
 
     this.state = {
       authUser: null
-    }
-  }
-
-  resetDeck = () => {
-    this.props.clearDeck();
+    };
   }
 
   componentDidMount() {
     firebase.auth.onAuthStateChanged(authUser => {
       authUser
         ? this.setState(() => ({ authUser }))
-        : this.setState(() => ({ authUser: null}))
-    })
+        : this.setState(() => ({ authUser: null}));
+    });
 
   }
 
   componentDidUpdate(prevProps, nextProps) {
     if (prevProps !== nextProps) {
       this.fetchCards();
-      this.resetDeck()
     }
   }
 
   fetchCards = async () => {
-    const color= this.props.color;
-    const colorCards = this.props.cards[color];
+    const color = this.props.color;
+
     if (!this.props.cards[color]) {
       const cards = await api.getCards(this.props.color);
-      this.props.loadCards(cards, color)
+      this.props.loadCards(cards, color);
     }
   }
 
@@ -76,8 +70,7 @@ export const mapStateToProps = state => ({
 
 export const mapDispatchToProps = dispatch => ({
   loadCards: (cards, color) => dispatch(actions.loadCards(cards, color)),
-  formState: color => dispatch(actions.formState(color)),
-  clearDeck: () => dispatch(actions.clearDeck())
+  formState: color => dispatch(actions.formState(color))
 });
 
 
@@ -85,5 +78,9 @@ export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
 
 App.propTypes = {
   color: PropTypes.string,
-  loadCards: PropTypes.func
+  loadCards: PropTypes.func,
+  cards: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array
+  ])
 };

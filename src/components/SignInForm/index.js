@@ -10,24 +10,27 @@ class SignInForm extends Component {
       email: '',
       password: '',
       errorMsg: false
-    }
+    };
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const { email, password, errorMsg } = this.state;
-    auth.doSignInWithEmailAndPassword(email, password).catch((error) => this.setState({errorMsg: 'Please create an account'}));
-      this.setState({
-        email: '',
-        password: ''
-      })
+    const { email, password } = this.state;
+    auth.doSignInWithEmailAndPassword(email, password)
+    /* eslint-disable */
+      .catch((error) => this.setState({errorMsg: 'Please create an account'}));
+    /* eslint-enable */
+    this.setState({
+      email: '',
+      password: ''
+    });
   }
 
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
       [name]: value
-    })
+    });
   }
 
   render() {
@@ -56,7 +59,7 @@ class SignInForm extends Component {
         </form>
         {errorMsg && <p>{errorMsg}</p>}
       </div>
-    )
+    );
   }
 }
 

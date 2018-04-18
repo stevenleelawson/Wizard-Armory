@@ -3,8 +3,33 @@ import { shallow } from 'enzyme';
 import SignInForm from './index';
 
 describe('SignInForm', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<SignInForm />);
+  });
+
   it('should match the snapshot', () => {
-    const wrapper = shallow(<SignInForm />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should update the state on handleChange', () => {
+    //setup
+    const mockEvent = {
+      target: {
+        value: 'taco@taco.com',
+        name: 'email'
+      }
+    };
+    const mockUser = {
+      email: 'taco@taco.com',
+      password: '',
+      errorMsg: false
+    };
+
+    wrapper.instance().handleChange(mockEvent);
+
+
+    expect(wrapper.state()).toEqual(mockUser);
   });
 });
