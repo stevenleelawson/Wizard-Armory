@@ -31,12 +31,15 @@ export const CardContainer = ({cards, addToDeck, color, deck}) => {
 
 export const mapStateToProps = ({cards, color, deck}) => ({cards, color, deck});
 
-export const mapDispathToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   addToDeck: card => dispatch(actions.addToDeck(card))
 })
 
-export default connect(mapStateToProps, mapDispathToProps)(CardContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(CardContainer);
 
 CardContainer.propTypes = {
-  cards: PropTypes.array
+  cards: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array
+  ])
 };

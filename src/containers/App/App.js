@@ -23,10 +23,6 @@ export class App extends Component {
     }
   }
 
-  resetDeck = () => {
-    this.props.clearDeck();
-  }
-
   componentDidMount() {
     firebase.auth.onAuthStateChanged(authUser => {
       authUser
@@ -39,13 +35,12 @@ export class App extends Component {
   componentDidUpdate(prevProps, nextProps) {
     if (prevProps !== nextProps) {
       this.fetchCards();
-      this.resetDeck()
     }
   }
 
   fetchCards = async () => {
-    const color= this.props.color;
-    const colorCards = this.props.cards[color];
+    const color = this.props.color;
+    
     if (!this.props.cards[color]) {
       const cards = await api.getCards(this.props.color);
       this.props.loadCards(cards, color)
@@ -77,7 +72,6 @@ export const mapStateToProps = state => ({
 export const mapDispatchToProps = dispatch => ({
   loadCards: (cards, color) => dispatch(actions.loadCards(cards, color)),
   formState: color => dispatch(actions.formState(color)),
-  clearDeck: () => dispatch(actions.clearDeck())
 });
 
 

@@ -26,5 +26,5 @@ export default Card;
 
 Card.propTypes = {
   imageUrl: PropTypes.string,
-  id: PropTypes.number
+  id: PropTypes.string
 };

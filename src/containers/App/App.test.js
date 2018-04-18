@@ -3,18 +3,21 @@ import { App, mapDispatchToProps, mapStateToProps } from './App';
 import { shallow } from 'enzyme';
 import * as actions from '../../actions';
 import * as mockData from '../../mockData';
+import * as api from '../../apiCalls';
+
 
 
 jest.mock('../../apiCalls');
 
 describe('App', () => {
+  let wrapper;
   let mockLoadCards;
   beforeEach( () => {
     mockLoadCards = jest.fn();
   });
 
   it('should match the snapshot', () => {
-    const wrapper = shallow(
+    wrapper = shallow(
       <App
         loadCards={mockLoadCards}
       />,
@@ -23,6 +26,20 @@ describe('App', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should be able to fetch cards', () => {
+    wrapper = shallow(
+      <App
+        loadCards={mockLoadCards}
+        cards={mockData.mockCleanCard}
+      />,
+      { disableLifecycleMethods: true }
+    );
+    const color = 'Blue';
+    wrapper.instance().fetchCards();
+    expect(api.getCards).toHaveBeenCalled();
+  });
+
 });
 
 describe('mapDispatchToProps', () => {

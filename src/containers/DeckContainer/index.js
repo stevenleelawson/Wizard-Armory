@@ -32,5 +32,6 @@ export const mapDispatchToProps = (dispatch) => ({
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(DeckContainer));
 
 DeckContainer.propTypes = {
-  cards: PropTypes.object
+  cards: PropTypes.object,
+  deck: PropTypes.array
 };
