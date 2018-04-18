@@ -9,6 +9,14 @@ Wizard Armory is an app where the user can select the a color of Magic for their
 
 Wizard Armory is an app built using React, Redux. It is throughly tested using enzyme and jest.
 
+
+# Screenshots of project:
+
+![wire](./public/wizard1.png?raw=true "wizard-wire")
+![wire](./public/wizard2.png?raw=true "wizard-wire")
+![wire](./public/wizard3.png?raw=true "wizard-wire")
+
+
 # WIREFRAMES FOR PROJECT
 ![wire](./public/wizardmock1.png?raw=true "wizard-wire")
 ![wire](./public/wizardmock2.png?raw=true "wizard-wire")
