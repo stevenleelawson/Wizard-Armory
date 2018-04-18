@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { auth } from '../../firebase';
 import './styles.css';
+import PropTypes from 'prop-types';
 
 class SignUpForm extends Component {
   constructor(props) {
@@ -66,5 +67,11 @@ class SignUpForm extends Component {
     );
   }
 }
+
+SignUpForm.propTypes = {
+  history: PropTypes.object,
+  location: PropTypes.object,
+  match: PropTypes.object
+};
 
 export default SignUpForm;

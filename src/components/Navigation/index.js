@@ -31,7 +31,10 @@ const NavigationNonAuth = () =>
   </div>;
 
 Navigation.propTypes = {
-  authUser: PropTypes.string
+  authUser: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ])
 };
 
 export default Navigation;
