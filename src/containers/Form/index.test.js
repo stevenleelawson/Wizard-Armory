@@ -34,17 +34,10 @@ describe('Form', () => {
   });
 
   it('should call formState on submit', () => {
-    //setup
-    const mockEvent = {
-      preventDefault: jest.fn()
-    };
-
     const expected = 'green';
 
-    wrapper.instance().handleChange({target: {value: 'green'}})
-    //execution
+    wrapper.instance().handleChange({target: {value: 'green'}});
 
-    //assertion
     expect(mockFormState).toHaveBeenCalledWith(expected);
 
   });

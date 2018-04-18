@@ -10,6 +10,6 @@ const SignOutButton = () =>
     className='nav-btn'
   >
     Sign Out
-  </button>
+  </button>;
 
-  export default SignOutButton
+export default SignOutButton;

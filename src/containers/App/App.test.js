@@ -35,7 +35,6 @@ describe('App', () => {
       />,
       { disableLifecycleMethods: true }
     );
-    const color = 'Blue';
     wrapper.instance().fetchCards();
     expect(api.getCards).toHaveBeenCalled();
   });
@@ -47,7 +46,7 @@ describe('mapDispatchToProps', () => {
     const color = 'Green';
     const mockDispatch = jest.fn();
     const mapped = mapDispatchToProps(mockDispatch);
-    const expected = actions.loadCards(mockData.mockCleanCard, color)
+    const expected = actions.loadCards(mockData.mockCleanCard, color);
     mapped.loadCards(mockData.mockCleanCard, color);
 
     expect(mockDispatch).toHaveBeenCalledWith(expected);
@@ -71,8 +70,8 @@ describe('mapStateToProps', () => {
   });
 
   it('should return an object with cards equal to an array', () => {
-    const expected = { cards: mockData.mockCleanCard}
-    const actual = mapStateToProps(expected)
-    expect(actual).toEqual(expected)
+    const expected = { cards: mockData.mockCleanCard};
+    const actual = mapStateToProps(expected);
+    expect(actual).toEqual(expected);
   });
 });

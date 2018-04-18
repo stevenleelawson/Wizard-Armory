@@ -6,7 +6,8 @@ import * as actions from '../../actions';
 
 describe('DeckContainer', () => {
   it('should match snapshot', () => {
-    const wrapper = shallow(<DeckContainer deck={mockData.mockCardData}/>)
+    const wrapper = shallow(<DeckContainer deck={mockData.mockCardData}/>);
+    expect(wrapper).toMatchSnapshot();
   });
 });
 
@@ -23,14 +24,14 @@ describe('mapDispatchToProps', () => {
 describe('mapStateToProps', () => {
 
   it('should return an array with cards equal to an array', () => {
-    const expected = { deck: mockData.mockCleanCard}
-    const actual = mapStateToProps(expected)
-    expect(actual).toEqual(expected)
+    const expected = { deck: mockData.mockCleanCard};
+    const actual = mapStateToProps(expected);
+    expect(actual).toEqual(expected);
   });
-  
+
   it('should return an object with cards equal to an array', () => {
-    const expected = { cards: mockData.mockCleanCard}
-    const actual = mapStateToProps(expected)
-    expect(actual).toEqual(expected)
+    const expected = { cards: mockData.mockCleanCard};
+    const actual = mapStateToProps(expected);
+    expect(actual).toEqual(expected);
   });
 });

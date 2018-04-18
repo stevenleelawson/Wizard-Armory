@@ -20,16 +20,16 @@ describe('SignInForm', () => {
         value: 'taco@taco.com',
         name: 'email'
       }
-    }
+    };
     const mockUser = {
       email: 'taco@taco.com',
       password: '',
       errorMsg: false
-    }
-    //execution
-    wrapper.instance().handleChange(mockEvent)
+    };
 
-    //assertion
-    expect(wrapper.state()).toEqual(mockUser)
+    wrapper.instance().handleChange(mockEvent);
+
+
+    expect(wrapper.state()).toEqual(mockUser);
   });
 });

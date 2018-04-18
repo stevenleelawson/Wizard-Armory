@@ -9,10 +9,10 @@ describe('getCards', () => {
   beforeEach(() => {
     window.fetch = jest.fn().mockImplementation(
       () => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve({cards: mockData.mockCardData})
-    })
-  );
+        ok: true,
+        json: () => Promise.resolve({cards: mockData.mockCardData})
+      })
+    );
     color = 'green';
   });
 
@@ -33,10 +33,10 @@ describe('getCards', () => {
   it('should call an error message on error', () => {
     window.fetch = jest.fn().mockImplementation(
       () => Promise.reject({
-      status: 500
-    })
-  );
+        status: 500
+      })
+    );
     const expected = new Error('unable to get cards');
-    expect(api.getCards(color)).rejects.toEqual(expected)
+    expect(api.getCards(color)).rejects.toEqual(expected);
   });
 });

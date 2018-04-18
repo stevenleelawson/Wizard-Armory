@@ -7,4 +7,4 @@ describe('Navigation', () => {
     const wrapper = shallow(<Navigation />);
     expect(wrapper).toMatchSnapshot();
   });
-})
+});

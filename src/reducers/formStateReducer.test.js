@@ -8,6 +8,7 @@ describe('formStateReducer', () => {
 
   it('should update the state tree with a string', () => {
     const mockColor = 'green';
-    expect(formStateReducer(undefined, actions.formState(mockColor))).toEqual(mockColor);
+    const actionFormState = actions.formState(mockColor);
+    expect(formStateReducer(undefined, actionFormState)).toEqual(mockColor);
   });
 });
