@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { auth } from '../../firebase';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 class SignInForm extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
       email: '',
       password: '',
@@ -62,5 +63,11 @@ class SignInForm extends Component {
     );
   }
 }
+
+SignInForm.propTypes = {
+  history: PropTypes.object,
+  location: PropTypes.object,
+  match: PropTypes.object
+};
 
 export default SignInForm;
